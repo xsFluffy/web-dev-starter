@@ -1,21 +1,39 @@
-let key = 42;
+let mySymbol = Symbol();
 
-function getSecretCode(value) { 
+let person = {
+  name: "John",
+  age: 32,
+  partTime: false,
+  showInfo: function () {
+    showMessage(this.name);
+  },
+};
 
-    let keyGenerator = function() {
-        let key = 12;
-        console.log(' in keyGenerator: ', key);
-        return key;
-    }
+person.showInfo();
 
-    let code = value * keyGenerator();
-    console.log(' in getSecretCode: ', key);
-    return code;
-}
+// person['age'] = 44;
 
-let secretCode = getSecretCode(2);
-showMessage(secretCode);
+// showMessage(person.age);
 
+// changePercentOff(30);
+
+// let key = 42;
+
+// function getSecretCode(value) {
+
+//     let keyGenerator = function() {
+//         let key = 12;
+//         console.log(' in keyGenerator: ', key);
+//         return key;
+//     }
+
+//     let code = value * keyGenerator();
+//     console.log(' in getSecretCode: ', key);
+//     return code;
+// }
+
+// let secretCode = getSecretCode(2);
+// showMessage(secretCode);
 
 // for (let i= 0; i < 5; i++) {
 //     console.log(i)
@@ -30,14 +48,12 @@ showMessage(secretCode);
 // showMessage (secretCode);
 // // console.log (getSecretCode(2));
 
-
 // let myFunction = function(message, firstName) {
 //     console.log(message);
 //     console.log(firstName);
 // }
 
 // myFunction(0, 'Hello');
-
 
 // let i = 4;
 
@@ -67,7 +83,6 @@ showMessage(secretCode);
 
 // showMessage(message);
 
-
 // if (state === 'FL') {
 //     taxPercent = 7;
 // }
@@ -85,7 +100,6 @@ showMessage(secretCode);
 //     let message = 'hello';
 //     showMessage(message);
 // }
-
 
 // person = object, firstName = string
 // let person = {
@@ -115,23 +129,21 @@ showMessage(secretCode);
 
 // let price = "\"hello world\"";
 
-// showMessage(price); 
-
+// showMessage(price);
 
 // let price = 20 - (-2);
-// let price = 99.99, 
-// name='Hiking Boots', 
+// let price = 99.99,
+// name='Hiking Boots',
 // discounted = false;
 // price = 49.99;
 
 // let price = 12,
 // taxRate = 7;
 
-// showMessage(price* taxRate); 
+// showMessage(price* taxRate);
 
 // price += 5;
-// showMessage(typeof price); 
-
+// showMessage(typeof price);
 
 // single line comment
 /*
