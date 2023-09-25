@@ -1,15 +1,47 @@
-let mySymbol = Symbol();
+const button = document.getElementById("see-review");
 
-let person = {
-  name: "John",
-  age: 32,
-  partTime: false,
-  showInfo: function () {
-    showMessage(this.name);
-  },
-};
+button.addEventListener("click", function () {
+  const review = document.getElementById("review");
 
-person.showInfo();
+  if (review.classList.contains("d-none")) {
+    review.classList.remove("d-none");
+    button.textContent = "CLOSE REVIEW";
+  } else {
+    review.classList.add("d-none");
+    button.textContent = "SEE REVIEW";
+  }
+});
+
+// let s = "Hello";
+// showMessage(s.charAt(1));
+
+// showMessage(Math.floor(Math.random() * 10));
+
+// let now = new Date();
+// showMessage(now.toDateString());
+
+// let message = "Hello";
+
+// function changeMessage(message) {
+//   message = "Hi!";
+// }
+
+// changeMessage(message);
+
+// showMessage(message);
+
+// person.showInfo();
+
+// let mySymbol = Symbol();
+
+// let person = {
+//   name: "John",
+//   age: 32,
+//   partTime: false,
+//   showInfo: function () {
+//     showMessage(this.name);
+//   },
+// };
 
 // person['age'] = 44;
 
