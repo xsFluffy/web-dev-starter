@@ -1,16 +1,37 @@
-const button = document.getElementById("see-review");
+const containers = document.getElementsByClassName("container");
+containers[0].classList.add("d-none");
+console.log(containers);
 
-button.addEventListener("click", function () {
-  const review = document.getElementById("review");
+// const values = ["a", "b", "c", "d", "z", "bb"];
 
-  if (review.classList.contains("d-none")) {
-    review.classList.remove("d-none");
-    button.textContent = "CLOSE REVIEW";
-  } else {
-    review.classList.add("d-none");
-    button.textContent = "SEE REVIEW";
-  }
-});
+// const set = values.filter(function (item) {
+//   console.log("item: ", item);
+//   return item > "b";
+// });
+
+// console.log(set);
+
+// const values = ["a", "b", "c"];
+// values.splice(1, 0, "hello");
+// console.log(values);
+
+// const values = ["a", "b", "c"];
+// const newValues = values.slice(1, 4);
+// console.log(newValues);
+
+// const button = document.getElementById("see-review");
+
+// button.addEventListener("click", function () {
+//   const review = document.getElementById("review");
+
+//   if (review.classList.contains("d-none")) {
+//     review.classList.remove("d-none");
+//     button.textContent = "CLOSE REVIEW";
+//   } else {
+//     review.classList.add("d-none");
+//     button.textContent = "SEE REVIEW";
+//   }
+// });
 
 // let s = "Hello";
 // showMessage(s.charAt(1));
