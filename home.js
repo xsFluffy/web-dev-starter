@@ -1,6 +1,43 @@
-const containers = document.getElementsByClassName("container");
-containers[0].classList.add("d-none");
-console.log(containers);
+"use strict";
+
+let productId = 1234;
+console.log(productId);
+
+// showProductId();
+
+// function showProductId() {
+//   console.log(123);
+// }
+
+// function showProductId() {
+//   let productId = 12345;
+
+//   function fix() {
+//     let productId = 45678;
+//     console.log("in fix: ", productId);
+//   }
+
+//   fix();
+//   console.log("in showProductId: ", productId);
+// }
+
+// showProductId();
+
+// const app = {
+//   productId: 12345,
+//   userName: "joe",
+//   orderNumber: 789,
+// };
+
+// function showProductId() {
+//   console.log(app.productId);
+// }
+
+// showProductId();
+
+// const containers = document.getElementsByClassName("container");
+// containers[0].classList.add("d-none");
+// console.log(containers);
 
 // const values = ["a", "b", "c", "d", "z", "bb"];
 
